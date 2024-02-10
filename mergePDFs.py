@@ -5,8 +5,6 @@ from tkinter import ttk
 from tkinter import filedialog as fd
 from tkinter.messagebox import showinfo
 
-
-
 class PDFMerge:
     filesToMerge = []
     outputFile = './result.pdf'
@@ -48,8 +46,6 @@ class PDFMerge:
 
     def get_selected_files(self):
         return self.filesToMerge
-
-
 
 class ViewController:
     pdfMerge = PDFMerge()
@@ -106,8 +102,6 @@ class ViewController:
             title='Merge Successful',
             message= "Merged " + str(len(self.pdfMerge.get_selected_files())) + " pdfs"
         )
-
-
 
 if __name__ == "__main__":
     views = ViewController()
